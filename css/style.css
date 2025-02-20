@@ -163,7 +163,7 @@ footer {
 .avatar {
     width: 40%;
     max-width: 200px;
-    
+    border-radius: 50%;
 }
 
 .about-heading {
