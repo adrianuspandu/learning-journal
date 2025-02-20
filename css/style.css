@@ -14,7 +14,7 @@ nav {
     align-items: center;
     padding: 0.75em 2em;
 
-    background-color:#292173;
+    background-color:#35B6A0;
 }
 
 nav ul {
@@ -26,11 +26,12 @@ nav ul {
 }
 
 .logo {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
 }
 
 .nav-item {
-    color: #E4F7F5;
+    color: #010403;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -88,6 +89,7 @@ nav ul {
 .blog-title {
     font-size: 1.5rem;
     margin: 0.125em 0;
+    color: #35B6A0;
 }
 
 .blog-desc {
@@ -96,7 +98,7 @@ nav ul {
 }
 
 footer {
-    background-color: #E4F7F5;
+    background-color: #35B6A0;
     color: #010403;
     text-align: center;
     padding: 2.25em;
@@ -112,6 +114,68 @@ footer {
     margin: 0;
 }
 
+/*ARTICLE PAGE STYLING*/
+.article-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-position: center;
+    padding: 1.5625em 1.25em;
+}
+
+.article-date {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.article-title {
+    font-size: 2rem;
+    margin: 0.5em 0;
+}
+
+.article-desc, .article-text {
+    font-size: 1rem;
+    margin-bottom: 2.25em;
+}
+
+.article-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #35B6A0;
+}
+
+.article-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recent-posts-section-heading {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*ABOUT ME */
+.about-section {
+    padding: 1.25em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.avatar {
+    width: 40%;
+    max-width: 200px;
+    
+}
+
+.about-heading {
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+.about-bio {
+    font-size: 1rem;
+    margin-bottom: 3.125em;
+}
+
 @media (min-width: 768px) {
     nav {
         padding: 2em 3.3125em;
@@ -119,6 +183,10 @@ footer {
 
     .nav-item {
         font-size: 1rem;
+    }
+
+    .logo {
+        max-width: 250px;
     }
 
     .hero-section {
@@ -136,9 +204,19 @@ footer {
     .blogs-section {
         grid-template-columns: 1fr 1fr;
     }
+
+    /*ARTICLE SECTION */
+    .article-section {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1024px) {
+    .logo {
+        max-width: 350px;
+    }
+
     .blogs-section {
         grid-template-columns: 1fr 1fr 1fr;
     }
